@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidCalculator</string>
+    <string name="oneNumber">1</string>
+    <string name="twoNumber">2</string>
+    <string name="threeNumber">3</string>
+    <string name="fourNumber">4</string>
+    <string name="fiveNumber">5</string>
+    <string name="sixNumber">6</string>
+    <string name="sevenNumber">7</string>
+    <string name="eightNumber">8</string>
+    <string name="nineNumber">9</string>
+    <string name="zeroNumber">0</string>
+    <string name="Equals">=</string>
+    <string name="buttonPlus">+</string>
+    <string name="buttonMinus">-</string>
+    <string name="buttonMultiply">*</string>
+    <string name="buttonDivide">/</string>
+    <string name="clear">Clear</string>
+</resources>
