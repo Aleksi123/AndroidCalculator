@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/buttonOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="217dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
+        android:onClick="calculate"
         android:text="@string/oneNumber"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonTwo"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/buttonTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginBottom="217dp"
+        android:onClick="calculate"
         android:text="@string/twoNumber"
-        app:layout_constraintStart_toEndOf="@+id/buttonOne"
-        app:layout_constraintTop_toBottomOf="@+id/textViewScreen" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonOne" />
 
     <Button
         android:id="@+id/buttonThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/threeNumber"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonTwo"
         app:layout_constraintStart_toEndOf="@+id/buttonTwo" />
@@ -37,6 +43,7 @@
         android:id="@+id/buttonFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/fourNumber"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonFive"
         app:layout_constraintStart_toStartOf="@+id/buttonOne" />
@@ -45,6 +52,7 @@
         android:id="@+id/buttonFive"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/fiveNumber"
         app:layout_constraintStart_toEndOf="@+id/buttonOne"
         app:layout_constraintTop_toBottomOf="@+id/buttonOne" />
@@ -53,6 +61,7 @@
         android:id="@+id/buttonSix"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/sixNumber"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonFive"
         app:layout_constraintStart_toEndOf="@+id/buttonTwo" />
@@ -61,6 +70,7 @@
         android:id="@+id/buttonSeven"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/sevenNumber"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonEight"
         app:layout_constraintStart_toStartOf="@+id/buttonFour" />
@@ -69,6 +79,7 @@
         android:id="@+id/buttonEight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/eightNumber"
         app:layout_constraintStart_toEndOf="@+id/buttonFour"
         app:layout_constraintTop_toBottomOf="@+id/buttonFour" />
@@ -77,9 +88,10 @@
         android:id="@+id/buttonNine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/nineNumber"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonEight"
-        app:layout_constraintStart_toStartOf="@+id/buttonEquals" />
+        app:layout_constraintStart_toEndOf="@+id/buttonFive" />
 
     <Button
         android:id="@+id/buttonZero"
@@ -87,6 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
+        android:onClick="calculate"
         android:text="@string/zeroNumber"
         app:layout_constraintEnd_toEndOf="@+id/buttonMultiply"
         app:layout_constraintTop_toBottomOf="@+id/buttonSeven" />
@@ -95,6 +108,7 @@
         android:id="@+id/buttonPlus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/buttonPlus"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonZero"
         app:layout_constraintStart_toStartOf="@+id/buttonSeven" />
@@ -103,14 +117,16 @@
         android:id="@+id/buttonEquals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/Equals"
-        app:layout_constraintStart_toEndOf="@+id/buttonMultiply"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEight" />
+        app:layout_constraintStart_toEndOf="@+id/buttonDivide"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNine" />
 
     <Button
         android:id="@+id/buttonMinus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/buttonMinus"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonMultiply"
         app:layout_constraintStart_toStartOf="@+id/buttonPlus" />
@@ -119,6 +135,7 @@
         android:id="@+id/buttonMultiply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/buttonMultiply"
         app:layout_constraintStart_toEndOf="@+id/buttonPlus"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlus" />
@@ -128,6 +145,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
+        android:onClick="calculate"
         android:text="@string/buttonDivide"
         app:layout_constraintBottom_toBottomOf="@+id/buttonMultiply"
         app:layout_constraintStart_toEndOf="@+id/buttonMultiply" />
@@ -136,20 +154,34 @@
         android:id="@+id/buttonClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="calculate"
         android:text="@string/clear"
         app:layout_constraintBaseline_toBaselineOf="@+id/buttonDivide"
-        app:layout_constraintStart_toEndOf="@+id/buttonDivide" />
+        app:layout_constraintStart_toStartOf="@+id/buttonEquals" />
+
+    <Button
+        android:id="@+id/buttonDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="@string/buttonDot"
+        app:layout_constraintEnd_toEndOf="@+id/buttonNine"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEight" />
 
     <TextView
         android:id="@+id/textViewScreen"
         android:layout_width="0dp"
-        android:layout_height="146dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="103dp"
         android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
